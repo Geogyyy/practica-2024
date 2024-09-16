@@ -2,9 +2,12 @@
 
 namespace App\Providers;
 
+use App\Models\User;
+use App\Models\Job;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Pagination\Paginator;
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\Facades\Gate;
 
 class AppServiceProvider extends ServiceProvider
 {
